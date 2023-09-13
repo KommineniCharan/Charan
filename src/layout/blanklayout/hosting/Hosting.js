@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../header2/Header";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
@@ -6,10 +6,30 @@ import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import MailLockIcon from "@mui/icons-material/MailLock";
 import PermDataSettingIcon from "@mui/icons-material/PermDataSetting";
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import SpeedIcon from "@mui/icons-material/Speed";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 const Hosting = () => {
+  // useState section start--------------------------------------
+  const [isShowMore, setIsShowMore] = useState(false);
+
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore);
+  };
+  // acoordian button
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
+  const [open6, setOpen6] = useState(false);
+  const [open7, setOpen7] = useState(false);
+  const [open8, setOpen8] = useState(false);
+  const [open9, setOpen9] = useState(false);
+  const [open10, setOpen10] = useState(false);
+
   const settings3 = {
     // dots: true,
     infinite: true,
@@ -414,9 +434,702 @@ const Hosting = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="row mt40">
+                <div className="col-md-12">
+                  <p className="table-p">
+                    Comprehensive breakdown of our plans
+                  </p>
+                </div>
+              </div>
+
+              <div className="container">
+                <div className="row mt80">
+                  <div className="col-md-12">
+                    <div className="pt-comparison-table table-style-1 table-responsive">
+                      <table className="table table-striped table-bordered">
+                        <thead className="thead-div">
+                          <tr className="header-div">
+                            <th className="brl">
+                              <div className="cell-inner">
+                                <span>Our Full Features Comparison</span>
+                              </div>
+                            </th>
+
+                            <th>
+                              <div className="cell-tag">
+                                <span>Basic</span>
+                              </div>
+                              <div className="cell-inner">
+                                <span className="cell-price">
+                                  $29
+                                  <span className="subscript">
+                                    <sup>.95</sup>
+                                    <sub>/per year</sub>
+                                  </span>
+                                </span>
+                              </div>
+                            </th>
+
+                            <th>
+                              <div className="cell-tag">
+                                <span>Standard</span>
+                              </div>
+                              <div className="cell-inner">
+                                <span className="cell-price">
+                                  $40
+                                  <span className="subscript">
+                                    <sup>.44</sup>
+                                    <sub>/per year</sub>
+                                  </span>
+                                </span>
+                              </div>
+                            </th>
+
+                            <th className="brr">
+                              <div className="cell-tag">
+                                <span>Premium</span>
+                              </div>
+                              <div className="cell-inner">
+                                <span className="cell-price">
+                                  $35
+                                  <span className="subscript">
+                                    <sup>.66</sup>
+                                    <sub>/per year</sub>
+                                  </span>
+                                </span>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Domain</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Hosting</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Website Maintenance</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>SSL Certificate</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Google Workspace Mails</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Google Marketing</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Social Media Marketing</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Branding</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wrong.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+
+                            <td>
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div className="cell-inner">
+                                <span>Technical Support</span>
+                                <del></del>
+                              </div>
+                            </td>
+
+                            <td className="cta">
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="cell-tag-bottom">
+                                <a href="#">Buy Now</a>
+                              </div>
+                            </td>
+
+                            <td className="cta">
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="cell-tag-bottom">
+                                <a href="#">Buy Now</a>
+                              </div>
+                            </td>
+
+                            <td className="cta">
+                              <div className="cell-inner">
+                                <img
+                                  src="assest/photos/hosting/wright.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="cell-tag-bottom">
+                                <a href="#">Buy Now</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* FAQ section start*/}
+        <div>
+          <section className="faq-sec">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <motion.h2
+                    className="slider-heading"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    FAQ'S
+                  </motion.h2>
+                  <div className="accordion" id="accordionExample">
+                    <div className="card">
+                      <div className="card-header" id="headingOne">
+                        <h2 className="mb-0">
+                          <button
+                            className="btn btn-link btn-block text-left"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                            onClick={() => setOpen1(!open1)}
+                          >
+                            What is Web Hosting?
+                            <span>
+                              {open1 ? (
+                                <AddIcon className="accordion-arrow" />
+                              ) : (
+                                <RemoveIcon className="accordion-arrow" />
+                              )}
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div
+                        id="collapseOne"
+                        className="collapse show"
+                        aria-labelledby="headingOne"
+                        data-parent="#accordionExample"
+                      >
+                        <div className="card-body">
+                          <div className="card-body-span">
+                            Web Hosting refers to the service that allows
+                            individuals or organizations to make their websites
+                            accessible on the internet. It involves storing
+                            website files on a server connected to the internet,
+                            ensuring visitors can access the website anytime.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" id="headingTwo">
+                        <h2 className="mb-0">
+                          <button
+                            className="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                            onClick={() => setOpen2(!open2)}
+                          >
+                            What types of web hosting are available ?
+                            <span>
+                              {open2 ? (
+                                <RemoveIcon className="accordion-arrow" />
+                              ) : (
+                                <AddIcon className="accordion-arrow" />
+                              )}
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        className="collapse"
+                        aria-labelledby="headingTwo"
+                        data-parent="#accordionExample"
+                      >
+                        <div className="card-body">
+                          <div className="card-body-span">
+                            There are various types of web hosting, including
+                            shared hosting, virtual private server (VPS)
+                            hosting, dedicated hosting, cloud hosting, and
+                            reseller hosting. Each type offers different levels
+                            of performance, control, and scalability.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" id="headingThree">
+                        <h2 className="mb-0">
+                          <button
+                            className="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                            onClick={() => setOpen3(!open3)}
+                          >
+                            What factors should I consider when choosing a web
+                            hosting provider ?
+                            <span>
+                              {open3 ? (
+                                <RemoveIcon className="accordion-arrow" />
+                              ) : (
+                                <AddIcon className="accordion-arrow" />
+                              )}
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        className="collapse"
+                        aria-labelledby="headingThree"
+                        data-parent="#accordionExample"
+                      >
+                        <div className="card-body">
+                          <div className="card-body-span">
+                            Some important factors to consider when choosing a
+                            web hosting provider include reliability,
+                            performance, customer support, scalability, pricing,
+                            security features, control panel options, and backup
+                            services. It's also helpful to read reviews and
+                            consider the provider's reputation.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" id="heading4">
+                        <h2 className="mb-0">
+                          <button
+                            className="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapse4"
+                            aria-expanded="false"
+                            aria-controls="collapse4"
+                            onClick={() => setOpen4(!open4)}
+                          >
+                            Can I host multiple websites on a single hosting
+                            plan ?
+                            <span>
+                              {open4 ? (
+                                <RemoveIcon className="accordion-arrow" />
+                              ) : (
+                                <AddIcon className="accordion-arrow" />
+                              )}
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div
+                        id="collapse4"
+                        className="collapse"
+                        aria-labelledby="heading4"
+                        data-parent="#accordionExample"
+                      >
+                        <div className="card-body">
+                          <div className="card-body-span">
+                            Many hosting providers offer plans allowing you to
+                            host multiple websites on a single account. Shared
+                            hosting plans often provide this feature, while
+                            other types of hosting may have limitations or
+                            require additional fees for hosting multiple
+                            websites.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" id="heading5">
+                        <h2 className="mb-0">
+                          <button
+                            className="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapse5"
+                            aria-expanded="false"
+                            aria-controls="collapse5"
+                            onClick={() => setOpen5(!open5)}
+                          >
+                            How much disk space and bandwidth do I need for my
+                            website ?
+                            <span>
+                              {open5 ? (
+                                <RemoveIcon className="accordion-arrow" />
+                              ) : (
+                                <AddIcon className="accordion-arrow" />
+                              )}
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div
+                        id="collapse5"
+                        className="collapse"
+                        aria-labelledby="heading5"
+                        data-parent="#accordionExample"
+                      >
+                        <div className="card-body">
+                          <div className="card-body-span">
+                            The required disk space and bandwidth depend on your
+                            website's content, expected traffic, and
+                            functionality. A few gigabytes of disk space and
+                            several hundred gigabytes of bandwidth should be
+                            sufficient for small to medium-sized websites.
+                            However, choosing a hosting plan that allows room
+                            for growth is advisable.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {isShowMore && (
+                    <div className="accordion" id="accordionExample2">
+                      <div className="card">
+                        <div className="card-header" id="heading6">
+                          <h2 className="mb-0">
+                            <button
+                              className="btn btn-link btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapse6"
+                              aria-expanded="false"
+                              aria-controls="collapse6"
+                              onClick={() => setOpen6(!open6)}
+                            >
+                              Can I transfer my website from one hosting
+                              provider to another ?
+                              <span>
+                                {open6 ? (
+                                  <RemoveIcon className="accordion-arrow" />
+                                ) : (
+                                  <AddIcon className="accordion-arrow" />
+                                )}
+                              </span>
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="collapse6"
+                          className="collapse"
+                          aria-labelledby="heading6"
+                          data-parent="#accordionExample2"
+                        >
+                          <div className="card-body">
+                            <div className="card-body-span">
+                              Yes, transferring your website from one hosting
+                              provider to another is possible. Most hosting
+                              providers offer migration services or guides on
+                              transferring your website files, databases, and
+                              configurations. It's recommended to consult with
+                              the new hosting provider or seek technical
+                              assistance to ensure a smooth transfer.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  <div className="readmore-button" onClick={toggleReadMoreLess}>
+                    {isShowMore ? (
+                      <ArrowDropUpIcon className="readmore-up" />
+                    ) : (
+                      <ArrowDropDownIcon className="readmore-up" />
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        {/* FAQ section end*/}
 
         {/* Quick Link section start */}
         <section>
@@ -499,8 +1212,6 @@ const Hosting = () => {
             </div>
           </div>
         </section>
-
-        <div></div>
       </section>
     </>
   );
